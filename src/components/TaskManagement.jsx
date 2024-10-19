@@ -21,7 +21,7 @@ const TaskManagement = () => {
                      <DropDown></DropDown>
             </div> 
             </div>
-   <div class='bg-white p-5'>
+   <div class='bg-white '>
 
              <div class=' flex p-5 border-b-2 justify-between gap-2 bg-white'>
                               <div class='flex gap-2 p-5'>
@@ -39,41 +39,64 @@ const TaskManagement = () => {
 
 
 
-             <div class='flex '>
+             <div class='flex gap-5 p-5 '>
 
-             <div class='border-2 bg-[#F4F7FF] p-5 :'>
-                            <div class='flex bg-white rounded-sm p-3 gap-2 w-2/3'>
+             <div class=' bg-[#F4F7FF] rounded-md p-5 :'>
+                            <div class='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
                              <img src="./src/assets/bluedot.png" class='size-5'></img>
                                <p class='text-xl font-urbanist font-semibold'> Not Started</p>
                                 </div>
-                 <div class='flex flex-col gap-3'>
+                 <div class='flex py-5 flex-col gap-3'>
                      <TaskCard></TaskCard>
                      <TaskCard></TaskCard>
                     
-                 </div>
+                 </div> 
              </div>
-             <div class='border-2'>
-             <p class='text-xl font-urbanist'> In Progress</p>
-                 <div class='flex flex-col'>
-                     <TaskCard></TaskCard>
-                     <TaskCard></TaskCard>
-                 
-                 </div>
-             </div> 
-              <div class='border-2'>
-             
-             <p class='text-xl font-urbanist'> Done</p>
-                 <div class='flex flex-col'>
-                     <TaskCard></TaskCard>
-                     <TaskCard></TaskCard>
-                  
+
+
+
+
+             <div class='flex  '>
+
+<div class=' bg-[#FFF8F3] rounded-md p-5 :'>
+               <div class='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
+                <img src="./src/assets/orangedot.png" class='size-5'></img>
+                  <p class='text-xl font-urbanist font-semibold'> In Progress</p>
+                   </div>
+    <div class='flex py-5 flex-col gap-3'>
+        <TaskCard></TaskCard>
+        <TaskCard></TaskCard>
+       
+    </div> 
+</div>
+  </div>
+
+
+  <div class='flex '>
+
+<div class=' bg-[#f4fff5] rounded-md p-5 :'>
+               <div class='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
+                <img src="./src/assets/greendot.png" class='size-5'></img>
+                  <p class='text-xl font-urbanist font-semibold'> Done</p>
+                   </div>
+    <div class='flex py-5 flex-col gap-3'>
+        <TaskCard></TaskCard>
+        <TaskCard></TaskCard>
+       
+    </div> 
+</div>
+                  </div>
+
+
+
+
                  </div>
              </div>
             </div>
              </div>
                   
-            </div>
-      </div>
+          
+      
       </>
   )
 }

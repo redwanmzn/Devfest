@@ -47,7 +47,7 @@ const Sidebar = () => {
               }`}
             >
       <img
-                src="./src/assets/icon-wrapper-h.png"
+                src="./src/assets/task.png"
                 className="size-5"
          alt="Task Icon"
               />
@@ -112,7 +112,7 @@ const Sidebar = () => {
             <Link to="/logout">
        <button
                 className={`flex gap-3 font-urbanist font-semibold rounded-none ${
-             isActive('/logout') ? 'text-red-600 bg-red-100' : 'text-gray-400'
+                  isActive('/logout') ? 'text-red-600 bg-red-100' : 'text-gray-400'
                 }`}
               >
                 <img
