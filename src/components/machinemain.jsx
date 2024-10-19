@@ -11,7 +11,7 @@ const Machinemain = () => {
       <Sidebar></Sidebar>
   
       </div>
-      <div class='top-0   '>
+      <div class='top-0 p-5   '>
   
     <Machines></Machines>
       </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'; // Import axios
+import axios from 'axios'; 
 import DropDown from './DropDown';
 import TaskCard from './TaskCard';
 
@@ -13,7 +13,6 @@ const TaskManagement = () => {
       try {
         setLoading(true);
 
-        // Make a GET request using axios
         const response = await axios.get('http://9212-105-101-199-138.ngrok-free.app/api/all_tasks_user/');
 
 
@@ -25,31 +24,30 @@ const TaskManagement = () => {
           throw new Error('Invalid data format: expected an array');
         }
       } catch (err) {
-        // Log the error with more information
         console.error('Error fetching tasks:', err);
-        setError('Failed to load tasks.'); // Set error state
+        setError('Failed to load tasks.'); 
       } finally {
-        setLoading(false); // Ensure loading is false after the request
+        setLoading(false); 
       }
     };
 
-    fetchTasks(); // Call the fetch function
+    fetchTasks(); 
   }, []);
 
-  // If loading, show a loading message
+  
   if (loading) return <p>Loading tasks...</p>;
 
-  // If there's an error, display it
+ 
   if (error) return <p>{error}</p>;
 
-  // Log tasks after loading
+
   console.log('Loaded Tasks:', tasks);
 
-  // Group tasks by state
+  
   const taskGroups = {
     pending: tasks.filter(task => task.state === 'pending'),
     inProgress: tasks.filter(task => task.state === 'in progress'),
-    done: tasks.filter(task => task.state === 'done'), // Ensure this state exists in your data
+    done: tasks.filter(task => task.state === 'done'), 
   };
 
   return (
@@ -92,7 +90,7 @@ const TaskManagement = () => {
           </div>
 
           <div className='flex gap-5 p-5'>
-            {/* Task Status: Not Started */}
+       
             <div className='bg-[#F4F7FF] rounded-md p-5'>
               <div className='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
                 <img src='./src/assets/bluedot.png' className='size-5' alt='Not Started' />
@@ -105,7 +103,6 @@ const TaskManagement = () => {
               </div>
             </div>
 
-            {/* Task Status: In Progress */}
             <div className='bg-[#FFF8F3] rounded-md p-5'>
               <div className='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
                 <img src='./src/assets/orangedot.png' className='size-5' alt='In Progress' />
@@ -118,7 +115,7 @@ const TaskManagement = () => {
               </div>
             </div>
 
-            {/* Task Status: Done */}
+            
             <div className='bg-[#f4fff5] rounded-md p-5'>
               <div className='flex bg-white rounded-sm p-2 gap-2 w-4/6'>
                 <img src='./src/assets/greendot.png' className='size-5' alt='Done' />

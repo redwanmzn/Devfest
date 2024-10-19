@@ -67,8 +67,6 @@ const Machines = () => {
                             <Machine></Machine>
                               <Machine></Machine>
                                 <Machine></Machine>
-                                  <Machine></Machine>
-                                   <Machine></Machine>
                                      </div>
         </div>
       </div>
