@@ -17,12 +17,10 @@ const TaskManagement = () => {
         const response = await axios.get('http://9212-105-101-199-138.ngrok-free.app/api/all_tasks_user/');
 
 
-        // Log the API response
         console.log('API Response:', response.data);
 
-        // Check if the response is an array
         if (Array.isArray(response.data)) {
-          setTasks(response.data); // Set tasks to the response data
+          setTasks(response.data); 
         } else {
           throw new Error('Invalid data format: expected an array');
         }

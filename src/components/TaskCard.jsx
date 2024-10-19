@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = () => {
+const TaskCard = () => {
   return (
     <>
     <div class=' bg-white  rounded-md  border-gray-200  gap-5 py-2 px-2 '>
@@ -38,4 +38,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default TaskCard
