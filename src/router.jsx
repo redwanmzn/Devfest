@@ -5,6 +5,8 @@ import Dashboard from "./components/Dashboard";
 import "./index.css";
 import Home from "./components/Home";
 import Task from "./components/Task";
+import Machines from "./components/machines";
+import Machinemain from "./components/machinemain";
 
 const Routers = () => {
   const location = useLocation();
@@ -16,6 +18,7 @@ const Routers = () => {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/task" element={<Task />} />
+          <Route path="/machines" element={<Machinemain />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
