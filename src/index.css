@@ -26,7 +26,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: #ffffff;
+  background-color: #f4f5f6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,7 +41,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

@@ -6,14 +6,14 @@ import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from '@/components/ui/chart';
+} from '@/components/ui/chart'; 
 
 const chartData = [
   { browser: 'chrome', visitors: 275, fill: '#4285F4' },
   { browser: 'safari', visitors: 200, fill: '#FF9500' },
   { browser: 'firefox', visitors: 287, fill: '#FF5733' },
   { browser: 'edge', visitors: 173, fill: '#0078D7' },
-  { browser: 'other', visitors: 190, fill: '#AAAAAA' },
+  
 ];
 
 export default function GaugeChart() {
@@ -56,7 +56,7 @@ export default function GaugeChart() {
                     y={(viewBox.cy || 0) + 24}
                     className="fill-muted-foreground"
                   >
-                    Visitors
+                   Units
                   </tspan>
                 </text>
               )

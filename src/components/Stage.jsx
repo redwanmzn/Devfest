@@ -39,13 +39,12 @@ const Stage = () => {
                        </div>            
           
          </div> 
-         <div class='flex flex-col'>
-                       <div class=' border-2'>
-                            <p class='font-urbanist font-semibold text-xl text-gray-400'>Stamping </p>
-                            <GaugeChart></GaugeChart>     
-                       </div>            
+        
+                       
+                         
+                               
           
-         </div> 
+    
        
             </div>                          
 </div>

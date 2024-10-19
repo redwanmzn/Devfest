@@ -6,10 +6,12 @@ import DropDown from './DropDown'
 import Chart from './Chart'
 import Stage from './Stage'
 
-const Dashborad = () => {
+
+
+const Dashboard = () => {
   return (
     <>
-    <div>
+
        <div class='bg-[#f4f5f6] flex-col gap-3 h-full flex '>
         <div class='flex justify-between' >
                            <div class='flex flex-col'>
@@ -37,14 +39,11 @@ const Dashborad = () => {
       <Chart></Chart>
 
         </div>    
-       <div class=''>
-       <Stage></Stage>
-
+      
        </div>
-       </div>
-    </div>
+   
     </>
   )
 }
 
-export default Dashborad
+export default Dashboard
