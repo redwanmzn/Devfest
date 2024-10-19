@@ -8,7 +8,7 @@ const Sidebar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-                <div className="h-full w-80 flex flex-col gap-5 px-5 text-black p-4">
+                <div className="h-full bg-white w-80 flex flex-col gap-5 px-5 text-black p-4">
                 <div className="fixed">
                 <div className="h-full w-full flex flex-col gap-5 px-5 text-black p-4">
              <div className="flex gap-3">
@@ -62,7 +62,7 @@ const Sidebar = () => {
          }`}
             >
          <img
-                src="./src/assets/lightning.png"
+                src="./src/assets/union.png"
              className="size-5"
                 alt="Machines Icon"
          />

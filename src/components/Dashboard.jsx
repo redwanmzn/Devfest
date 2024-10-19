@@ -4,15 +4,14 @@ import CardTask from './CardTask'
 import Shifts from './Shifts'
 import DropDown from './DropDown'
 import Chart from './Chart'
-import Stage from './Stage'
-
-
+import Sidebar from './Sidebar'
 
 const Dashboard = () => {
   return (
     <>
 
-       <div class='bg-[#f4f5f6] flex-col gap-3 h-full flex '>
+    
+       <div class='bg-[#f4f5f6] flex-col gap-3 h-full flex'>
         <div class='flex justify-between' >
                            <div class='flex flex-col'>
                               <p class="font-urbanist font-bold text-[#535358] text-2xl p-3">Welcome back, Red</p>
@@ -31,12 +30,12 @@ const Dashboard = () => {
                         <CardTask></CardTask>
                          </div>
      <div class='flex gap-5 px-5'>
+      <Chart></Chart>
         
-      <Shifts></Shifts>
 
+      <Shifts></Shifts>
       
    
-      <Chart></Chart>
 
         </div>    
       
